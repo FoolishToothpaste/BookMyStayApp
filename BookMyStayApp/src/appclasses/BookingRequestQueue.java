@@ -68,4 +68,8 @@ public class BookingRequestQueue {
         }
         System.out.println("Total requests pending: " + requestQueue.size() + "\n");
     }
+    
+    public Reservation poll() {
+        return requestQueue.poll();
+    }
 }
